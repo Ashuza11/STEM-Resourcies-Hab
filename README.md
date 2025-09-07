@@ -1,5 +1,3 @@
-# 🌍 STEM-Resources-Hub
-
 ![STEM Resources Hub Banner](./media/bunner.png)
 
 > An AI-powered platform designed to overcome language barriers, enhance comprehension, and ensure cultural relevance in **African STEM education**.  
