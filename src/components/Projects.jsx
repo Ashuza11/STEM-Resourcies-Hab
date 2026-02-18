@@ -85,7 +85,7 @@ function BongoLab({ t }) {
             <div className="phone-mockup w-full max-w-[280px]">
               <div className="phone-screen bg-black aspect-[9/16] relative">
                 <video
-                  src="/STEM-RH-BG-VIDEO.mp4"
+                  src="/STEM-RH-BG-VIDEO.webm"
                   autoPlay
                   muted
                   loop
