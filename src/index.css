@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary: Royal Blue #28378F — from logo circuit traces */
+  --color-royal-50: #eceeff;
+  --color-royal-100: #d5d9fd;
+  --color-royal-200: #adb4f5;
+  --color-royal-300: #7f8ae8;
+  --color-royal-400: #4f5cc4;
+  --color-royal-500: #28378f;
+  --color-royal-600: #202d75;
+  --color-royal-700: #18225b;
+  --color-royal-800: #111842;
+  --color-royal-900: #0a0e29;
+
+  /* Secondary: Miami Marmalade #F7951E — from logo lab/pi icons */
+  --color-marmalade-50: #fff8eb;
+  --color-marmalade-100: #feecc7;
+  --color-marmalade-200: #fdd78a;
+  --color-marmalade-300: #fcbf4d;
+  --color-marmalade-400: #f9a832;
+  --color-marmalade-500: #f7951e;
+  --color-marmalade-600: #d47a14;
+  --color-marmalade-700: #a85e0e;
+  --color-marmalade-800: #7d4509;
+  --color-marmalade-900: #5c3207;
+
+  /* Tertiary: Silver #ADB0B3 */
+  --color-silver-50: #f6f6f7;
+  --color-silver-100: #edeef0;
+  --color-silver-200: #dcdde0;
+  --color-silver-300: #c5c7cb;
+  --color-silver-400: #adb0b3;
+  --color-silver-500: #93969a;
+  --color-silver-600: #787b80;
+  --color-silver-700: #5e6166;
+  --color-silver-800: #44474c;
+  --color-silver-900: #2b2d32;
+
+  /* Accent Teal — complementary for innovation */
+  --color-teal-50: #edfcf8;
+  --color-teal-100: #d0f7ed;
+  --color-teal-200: #a3eddb;
+  --color-teal-300: #6ddec4;
+  --color-teal-400: #38c9a8;
+  --color-teal-500: #1aab8e;
+  --color-teal-600: #128a73;
+  --color-teal-700: #0f6e5d;
+  --color-teal-800: #0d574a;
+  --color-teal-900: #083d34;
+
+  --font-display: "Poppins", sans-serif;
+  --font-body: "Roboto Flex", sans-serif;
+}
+
+/* ─── Base ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track,
+.dark::-webkit-scrollbar-track {
+  background: #0a0e29;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #28378f, #f7951e);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #4f5cc4, #f9a832);
+}
+
+html {
+  scrollbar-color: #28378f #f1f1f1;
+  scrollbar-width: thin;
+}
+
+html.dark {
+  scrollbar-color: #f7951e #0a0e29;
+}
+
+/* ─── African geometric pattern ─── */
+.afro-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2328378f' fill-opacity='0.04'%3E%3Cpath d='M30 0L60 30L30 60L0 30z M30 10L50 30L30 50L10 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark .afro-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f7951e' fill-opacity='0.03'%3E%3Cpath d='M30 0L60 30L30 60L0 30z M30 10L50 30L30 50L10 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ─── Phone mockup ─── */
+.phone-mockup {
+  background: linear-gradient(145deg, #111842, #0a0e29);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.phone-screen {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
