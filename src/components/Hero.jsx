@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="absolute inset-0 z-0">
           <video
             ref={videoRef}
-            src="/STEM-RH-BG-VIDEO.webm"
+            src="/STEM-RH-BG-VIDEO.mp4"
             autoPlay
             muted
             loop

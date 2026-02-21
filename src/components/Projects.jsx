@@ -72,7 +72,7 @@ function BongoLab({ t }) {
             </div>
 
             <a
-              href="#"
+              href="https://bongo-lab.vercel.app/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-white bg-gradient-to-r from-royal-500 to-royal-600 hover:from-royal-400 hover:to-royal-500 shadow-lg shadow-royal-500/25 transition-all hover:shadow-xl hover:-translate-y-0.5"
             >
               {project.cta}
@@ -85,7 +85,7 @@ function BongoLab({ t }) {
             <div className="phone-mockup w-full max-w-[280px]">
               <div className="phone-screen bg-black aspect-[9/16] relative">
                 <video
-                  src="/STEM-RH-BG-VIDEO.webm"
+                  src="/bongolab-demo.mp4"
                   autoPlay
                   muted
                   loop
