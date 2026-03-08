@@ -13,6 +13,8 @@ import {
   Sparkles,
   MessageSquare,
   GraduationCap,
+  Languages,
+  Video,
 } from "lucide-react";
 import { useLang } from "../context/LanguageContext";
 
@@ -60,6 +62,10 @@ function BongoLab({ t }) {
                 { icon: WifiOff, label: "Offline-first" },
                 { icon: Smartphone, label: "Low-end Android" },
                 { icon: Globe, label: "PWA" },
+                { icon: Languages, label: "5+ Languages" },
+                { icon: Users, label: "Community" },
+                { icon: Sparkles, label: "SimForge AI Engine" },
+                { icon: Video, label: "Video Export" },
               ].map(({ icon: Icon, label }) => (
                 <span
                   key={label}
@@ -72,7 +78,7 @@ function BongoLab({ t }) {
             </div>
 
             <a
-              href="https://bongo-lab.vercel.app/"
+              href="https://bongolab.stemrh.org/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-display font-semibold text-white bg-gradient-to-r from-royal-500 to-royal-600 hover:from-royal-400 hover:to-royal-500 shadow-lg shadow-royal-500/25 transition-all hover:shadow-xl hover:-translate-y-0.5"
             >
               {project.cta}
@@ -83,7 +89,7 @@ function BongoLab({ t }) {
           {/* Phone Mockup with Video */}
           <div className="flex items-center justify-center p-8 sm:p-10 lg:p-12 bg-silver-100 dark:bg-royal-800 transition-colors duration-500">
             <div className="phone-mockup w-full max-w-[280px]">
-              <div className="phone-screen bg-black aspect-[9/16] relative">
+              <div className="phone-screen bg-black aspect-[9/16] relative overflow-hidden">
                 <video
                   src="/bongolab-demo.mp4"
                   autoPlay
@@ -91,6 +97,7 @@ function BongoLab({ t }) {
                   loop
                   playsInline
                   className="absolute inset-0 w-full h-full object-cover"
+                  style={{ transform: "scaleX(1.15)", transformOrigin: "center center" }}
                 />
               </div>
             </div>

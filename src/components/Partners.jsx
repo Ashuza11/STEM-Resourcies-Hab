@@ -5,14 +5,17 @@ const partners = [
   {
     name: "ARCHIV",
     logo: "/partners/full-logo-archv.png",
+    darkInvert: false,
   },
   {
     name: "DDC RDC",
     logo: "/partners/DDC RDC-06.png",
+    darkInvert: false,
   },
   {
     name: "Deep Learning Indaba",
     logo: "/partners/Deep-learning-Indaba.png",
+    darkInvert: true,
   },
 ];
 
@@ -54,7 +57,9 @@ export default function Partners() {
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="h-16 sm:h-20 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className={`h-16 sm:h-20 w-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-500 ${
+                    partner.darkInvert ? "dark:brightness-0 dark:invert" : ""
+                  }`}
                 />
                 {/* <span className="text-sm font-medium text-silver-500 dark:text-silver-400 group-hover:text-marmalade-500 dark:group-hover:text-marmalade-400 transition-colors duration-300">
                   {partner.name}

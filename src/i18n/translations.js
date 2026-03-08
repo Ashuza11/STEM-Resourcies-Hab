@@ -9,38 +9,39 @@ export const translations = {
     hero: {
       headline: "Democratizing STEM Excellence Across Africa",
       subheadline:
-        'Bypassing infrastructure gaps and the "Language Tax" with offline-first tools, mother-tongue knowledge bases, and open education for every learner.',
+        'Bypassing infrastructure gaps and the "Language Tax" with offline-first tools, mother-tongue knowledge bases, and open education for every learner. Every girl, every classroom, every language.',
       cta: "Explore Our Projects",
       ctaSecondary: "Watch Our Story",
     },
     mission: {
       sectionTitle: "Our Deployment Strategy",
       sectionSubtitle:
-        "A two-phase approach: secure institutional trust today, build the localized knowledge infrastructure tomorrow.",
+        "Rooted in Ubuntu: deploy a world-class simulation platform today, build the mother-tongue knowledge infrastructure tomorrow.",
       phase1: {
-        label: "Phase 1 — Today",
-        title: "BongoLab: The Trojan Horse",
+        label: "Phase 1: Live and Growing",
+        title: "BongoLab: The Foundation",
         description:
-          "BongoLab is our entry point into schools and institutions. By providing an immediately useful, offline-first physics simulation tool, we secure institutional trust, prove value to teachers, and establish the connectivity and device ecosystem needed for what comes next.",
+          "Africa's first multi-subject STEM simulation platform running offline on low-end devices. Teachers use SimForge to generate custom simulations from a single sentence, record them, and export as video for their students.",
         points: [
-          "Secures partnerships with schools and education ministries",
-          "Proves the model: high-quality STEM tools that work on low-end devices",
-          "Builds the user base and distribution network across schools",
+          "Multi-subject simulations: Physics, Chemistry, Biology, Earth & Space, Modern Tech, all offline-first",
+          "SimForge AI engine: generate any custom simulation from a single sentence",
+          "Educators can record any simulation and export it as a video",
+          "Growing community of teachers and educators across African schools",
         ],
       },
       phase2: {
-        label: "Phase 2 — Tomorrow",
-        title: "Ntina: The Vision",
+        label: "Phase 2: In Development",
+        title: "Ntina: The Knowledge Layer",
         description:
-          "With school connectivity and trust established through BongoLab, we deploy Ntina — an audio-first STEM knowledge base in African mother tongues. The infrastructure BongoLab builds becomes the foundation Ntina needs to thrive.",
+          "Built on the school network BongoLab establishes, Ntina is an audio-first STEM knowledge base in African mother tongues, covering languages with little to no digital presence. Where textbooks fail and connectivity is scarce, Ntina delivers knowledge by voice, in the language learners grew up speaking.",
         points: [
-          "Leverages the school network BongoLab established",
-          "Eliminates the language tax with mother-tongue STEM content",
-          "Audio-first design removes literacy barriers",
+          "Leverages the school network and trust built by BongoLab",
+          "STEM content in Swahili, Lingala, Kinyarwanda, Hausa, Yoruba, and more",
+          "Audio-first design removes literacy and connectivity barriers",
         ],
       },
       connector:
-        "BongoLab opens the door. Ntina walks through it.",
+        "BongoLab builds the trust. Ntina carries the knowledge.",
     },
     projects: {
       sectionTitle: "Featured Projects",
@@ -49,13 +50,16 @@ export const translations = {
         tag: "Flagship Project",
         title: "BongoLab",
         description:
-          "An offline-first 2D Physics Simulation Progressive Web App designed for secondary schools across Africa.",
+          "Africa's first multi-subject STEM simulation platform, covering Physics, Chemistry, Biology, Math & Statistics, Earth & Space, and Modern Tech. Our SimForge engine lets educators generate any custom simulation from a single sentence. Offline. Multilingual. Community-powered.",
         features: [
-          "5 interactive simulations: Pendulum, Inclined Plane, Electric Circuit, Light Reflection, Mechanical Lever",
-          "Fully French/DRC-localized UI and design language",
-          "Runs on low-end Android devices",
-          "Works completely offline after first load — no internet required",
-          "Progressive Web App — install directly from browser",
+          "Physics · Chemistry · Biology · Math & Statistics · Earth & Space · Modern Tech: AI, ML & Computing",
+          "SimForge: generate any custom simulation from a single sentence. No tech expertise needed.",
+          "Record any simulation and export it as a video",
+          "5+ languages: English, French, Kiswahili, Kinyarwanda, with more coming",
+          "Active teacher and educator community",
+          "Runs on low-end Android and basic mobile devices, works fully offline",
+          "Your data stays on your device. No account, no tracking.",
+          "Progressive Web App: install directly from browser",
         ],
         cta: "Launch BongoLab",
         demo: "Watch Demo",
@@ -75,7 +79,7 @@ export const translations = {
         tag: "Knowledge Base",
         title: "Ntina",
         description:
-          "An audio-based Wikipedia for STEM in African mother tongues — Swahili, Lingala, and more.",
+          "An audio-based Wikipedia for STEM in African mother tongues: Swahili, Lingala, Kinyarwanda, Zulu, Igbo, Shona, Hausa, Amharic, Yoruba, Wolof, and more, including languages with little to no digital presence. Because learning in your mother tongue is not just effective. It is your right.",
         mechanism: [
           "Expert recordings in local languages",
           "Community peer validation",
@@ -107,6 +111,8 @@ export const translations = {
       rights: "All rights reserved.",
       madeWith: "Made with",
       forAfrica: "for Africa",
+      followMovement: "Follow the movement.",
+      contact: "contact@stemrh.org",
     },
   },
   fr: {
@@ -119,38 +125,39 @@ export const translations = {
     hero: {
       headline: "Démocratiser l'excellence STEM en Afrique",
       subheadline:
-        "Surmonter les lacunes d'infrastructure et la \"taxe linguistique\" grâce à des outils hors ligne, des bases de connaissances en langues maternelles et une éducation ouverte pour chaque apprenant.",
+        "Surmonter les lacunes d'infrastructure et la \"taxe linguistique\" grâce à des outils hors ligne, des bases de connaissances en langues maternelles et une éducation ouverte pour chaque apprenant. Chaque fille, chaque classe, chaque langue.",
       cta: "Explorer nos Projets",
       ctaSecondary: "Regarder notre Histoire",
     },
     mission: {
       sectionTitle: "Notre Stratégie de Déploiement",
       sectionSubtitle:
-        "Une approche en deux phases : sécuriser la confiance institutionnelle aujourd'hui, construire l'infrastructure de connaissances localisées demain.",
+        "Ancré dans Ubuntu : déployer une plateforme de simulation de classe mondiale aujourd'hui, construire l'infrastructure de connaissances en langues maternelles demain.",
       phase1: {
-        label: "Phase 1 — Aujourd'hui",
-        title: "BongoLab : Le Cheval de Troie",
+        label: "Phase 1 : En Ligne et En Croissance",
+        title: "BongoLab : La Fondation",
         description:
-          "BongoLab est notre point d'entrée dans les écoles et institutions. En fournissant un outil de simulation physique immédiatement utile et fonctionnant hors ligne, nous sécurisons la confiance institutionnelle, prouvons la valeur aux enseignants, et établissons l'écosystème de connectivité nécessaire pour la suite.",
+          "La première plateforme africaine de simulation STEM multi-matières fonctionnant hors ligne sur des appareils bas de gamme. Les enseignants utilisent SimForge pour générer des simulations personnalisées à partir d'une seule phrase, les enregistrer et les exporter en vidéo.",
         points: [
-          "Sécurise des partenariats avec les écoles et ministères de l'éducation",
-          "Prouve le modèle : des outils STEM de qualité fonctionnant sur des appareils bas de gamme",
-          "Construit la base d'utilisateurs et le réseau de distribution à travers les écoles",
+          "Simulations multi-matières : Physique, Chimie, Biologie, Terre & Espace, Tech Moderne, tout hors ligne",
+          "Moteur IA SimForge : générez n'importe quelle simulation à partir d'une seule phrase",
+          "Les enseignants peuvent enregistrer toute simulation et l'exporter en vidéo",
+          "Communauté grandissante d'enseignants et d'éducateurs à travers les écoles africaines",
         ],
       },
       phase2: {
-        label: "Phase 2 — Demain",
-        title: "Ntina : La Vision",
+        label: "Phase 2 : En Développement",
+        title: "Ntina : La Couche de Connaissances",
         description:
-          "Avec la connectivité scolaire et la confiance établies grâce à BongoLab, nous déployons Ntina — une base de connaissances STEM audio-first en langues maternelles africaines. L'infrastructure que BongoLab construit devient la fondation dont Ntina a besoin pour prospérer.",
+          "Construit sur le réseau scolaire établi par BongoLab, Ntina est une base de connaissances STEM audio-first en langues maternelles africaines, couvrant des langues peu ou pas représentées sur internet. Là où les manuels scolaires échouent et la connectivité est rare, Ntina délivre le savoir par la voix, dans la langue que les apprenants ont grandi en parlant.",
         points: [
-          "Exploite le réseau scolaire établi par BongoLab",
-          "Élimine la taxe linguistique avec du contenu STEM en langues maternelles",
-          "Conception audio-first qui supprime les barrières de littératie",
+          "S'appuie sur le réseau scolaire et la confiance bâtis par BongoLab",
+          "Contenu STEM en Swahili, Lingala, Kinyarwanda, Hausa, Yoruba, et plus",
+          "Conception audio-first qui supprime les barrières de littératie et de connectivité",
         ],
       },
       connector:
-        "BongoLab ouvre la porte. Ntina la franchit.",
+        "BongoLab construit la confiance. Ntina porte la connaissance.",
     },
     projects: {
       sectionTitle: "Projets Phares",
@@ -160,13 +167,16 @@ export const translations = {
         tag: "Projet Phare",
         title: "BongoLab",
         description:
-          "Une application web progressive de simulation physique 2D hors ligne, conçue pour les écoles secondaires à travers l'Afrique.",
+          "La première plateforme africaine de simulation STEM multi-matières, couvrant la Physique, Chimie, Biologie, Maths & Statistiques, Terre & Espace et Tech Moderne. Notre moteur SimForge permet aux enseignants de générer n'importe quelle simulation à partir d'une seule phrase. Hors ligne. Multilingue. Porté par la communauté.",
         features: [
-          "5 simulations interactives : Pendule, Plan incliné, Circuit électrique, Réflexion de la lumière, Levier mécanique",
-          "Interface et langage de design entièrement localisés en français/RDC",
-          "Fonctionne sur des appareils Android bas de gamme",
-          "Fonctionne totalement hors ligne après le premier chargement — pas d'internet requis",
-          "Application Web Progressive — installation directe depuis le navigateur",
+          "Physique · Chimie · Biologie · Maths & Statistiques · Terre & Espace · Tech Moderne : IA, ML & Informatique",
+          "SimForge : générez n'importe quelle simulation à partir d'une seule phrase. Aucune expertise technique requise.",
+          "Enregistrez n'importe quelle simulation et exportez-la en vidéo",
+          "5+ langues : Anglais, Français, Kiswahili, Kinyarwanda, et d'autres à venir",
+          "Communauté active d'enseignants et d'éducateurs",
+          "Fonctionne sur Android bas de gamme et appareils mobiles de base, totalement hors ligne",
+          "Vos données restent sur votre appareil. Sans compte, sans traçage.",
+          "Application Web Progressive : installation directe depuis le navigateur",
         ],
         cta: "Lancer BongoLab",
         demo: "Voir la Démo",
@@ -186,7 +196,7 @@ export const translations = {
         tag: "Base de Connaissances",
         title: "Ntina",
         description:
-          "Un Wikipédia audio pour les STEM en langues maternelles africaines — Swahili, Lingala, et plus.",
+          "Un Wikipédia audio pour les STEM en langues maternelles africaines : Swahili, Lingala, Kinyarwanda, Zulu, Igbo, Shona, Hausa, Amharique, Yoruba, Wolof, et plus, y compris les langues peu ou pas représentées sur internet. Parce qu'apprendre dans sa langue maternelle n'est pas seulement plus efficace. C'est un droit.",
         mechanism: [
           "Enregistrements d'experts en langues locales",
           "Validation par les pairs communautaires",
@@ -218,6 +228,8 @@ export const translations = {
       rights: "Tous droits réservés.",
       madeWith: "Fait avec",
       forAfrica: "pour l'Afrique",
+      followMovement: "Suivez le mouvement.",
+      contact: "contact@stemrh.org",
     },
   },
 };
