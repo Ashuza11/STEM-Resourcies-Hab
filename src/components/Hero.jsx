@@ -141,13 +141,14 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
+              whileHover={{ y: -6 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.7 }}
-              className="relative rounded-2xl bg-white dark:bg-royal-800/60 border border-royal-200 dark:border-royal-700/50 p-8 transition-colors duration-500"
+              transition={{ duration: 0.7, y: { type: "spring", stiffness: 300, damping: 22 } }}
+              className="group/phase1 relative rounded-2xl bg-white dark:bg-royal-800/60 border border-royal-200 dark:border-royal-700/50 p-8 transition-all duration-300 hover:shadow-xl hover:shadow-royal-500/10 hover:border-royal-300/70 dark:hover:border-royal-500/50 cursor-default"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-royal-100 dark:bg-royal-700/40 flex items-center justify-center transition-colors duration-500">
-                  <Target size={22} className="text-royal-500 dark:text-royal-300" />
+                <div className="w-10 h-10 rounded-xl bg-royal-100 dark:bg-royal-700/40 flex items-center justify-center transition-all duration-300 group-hover/phase1:bg-royal-200 dark:group-hover/phase1:bg-royal-600/50 group-hover/phase1:scale-110">
+                  <Target size={22} className="text-royal-500 dark:text-royal-300 transition-transform duration-300 group-hover/phase1:rotate-12" />
                 </div>
                 <span className="font-display font-semibold text-sm text-royal-500 dark:text-royal-300 uppercase tracking-wider">
                   {t.mission.phase1.label}
@@ -163,11 +164,11 @@ export default function Hero() {
                 {t.mission.phase1.points.map((point, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2 text-sm text-silver-700 dark:text-silver-300 transition-colors duration-500"
+                    className="group/item flex items-start gap-2 text-sm text-silver-700 dark:text-silver-300 transition-colors duration-500"
                   >
                     <ChevronRight
                       size={16}
-                      className="text-royal-500 dark:text-royal-400 mt-0.5 shrink-0"
+                      className="text-royal-500 dark:text-royal-400 mt-0.5 shrink-0 transition-transform duration-200 group-hover/item:translate-x-1"
                     />
                     {point}
                   </li>
@@ -179,13 +180,14 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
+              whileHover={{ y: -6 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.7 }}
-              className="relative rounded-2xl bg-white dark:bg-royal-800/60 border border-marmalade-200 dark:border-marmalade-800/50 p-8 transition-colors duration-500"
+              transition={{ duration: 0.7, y: { type: "spring", stiffness: 300, damping: 22 } }}
+              className="group/phase2 relative rounded-2xl bg-white dark:bg-royal-800/60 border border-marmalade-200 dark:border-marmalade-800/50 p-8 transition-all duration-300 hover:shadow-xl hover:shadow-marmalade-500/10 hover:border-marmalade-300/70 dark:hover:border-marmalade-600/50 cursor-default"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl bg-marmalade-100 dark:bg-marmalade-900/40 flex items-center justify-center transition-colors duration-500">
-                  <Lightbulb size={22} className="text-marmalade-500 dark:text-marmalade-400" />
+                <div className="w-10 h-10 rounded-xl bg-marmalade-100 dark:bg-marmalade-900/40 flex items-center justify-center transition-all duration-300 group-hover/phase2:bg-marmalade-200 dark:group-hover/phase2:bg-marmalade-800/60 group-hover/phase2:scale-110">
+                  <Lightbulb size={22} className="text-marmalade-500 dark:text-marmalade-400 transition-transform duration-300 group-hover/phase2:rotate-12" />
                 </div>
                 <span className="font-display font-semibold text-sm text-marmalade-600 dark:text-marmalade-400 uppercase tracking-wider">
                   {t.mission.phase2.label}
@@ -201,11 +203,11 @@ export default function Hero() {
                 {t.mission.phase2.points.map((point, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2 text-sm text-silver-700 dark:text-silver-300 transition-colors duration-500"
+                    className="group/item flex items-start gap-2 text-sm text-silver-700 dark:text-silver-300 transition-colors duration-500"
                   >
                     <ChevronRight
                       size={16}
-                      className="text-marmalade-500 mt-0.5 shrink-0"
+                      className="text-marmalade-500 mt-0.5 shrink-0 transition-transform duration-200 group-hover/item:translate-x-1"
                     />
                     {point}
                   </li>
@@ -224,7 +226,7 @@ export default function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center text-silver-500 dark:text-silver-400 text-sm italic max-w-lg mx-auto transition-colors duration-500"
+            className="text-center text-silver-500 dark:text-silver-400 text-sm italic max-w-lg mx-auto px-4 mt-8 md:mt-0 transition-colors duration-500"
           >
             {t.mission.connector}
           </motion.p>

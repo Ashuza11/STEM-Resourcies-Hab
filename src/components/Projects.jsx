@@ -28,7 +28,11 @@ function BongoLab({ t }) {
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.7 }}
     >
-      <div className="relative rounded-2xl bg-white dark:bg-royal-800/50 border border-silver-200 dark:border-royal-700/50 overflow-hidden transition-colors duration-500">
+      <motion.div
+        whileHover={{ y: -6 }}
+        transition={{ type: "spring", stiffness: 300, damping: 22 }}
+        className="relative rounded-2xl bg-white dark:bg-royal-800/50 border border-silver-200 dark:border-royal-700/50 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-royal-500/10 hover:border-royal-300/60 dark:hover:border-royal-500/40"
+      >
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Content */}
           <div className="p-8 sm:p-10 lg:p-12">
@@ -67,13 +71,15 @@ function BongoLab({ t }) {
                 { icon: Sparkles, label: "SimForge AI Engine" },
                 { icon: Video, label: "Video Export" },
               ].map(({ icon: Icon, label }) => (
-                <span
+                <motion.span
                   key={label}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-silver-100 dark:bg-royal-700/40 text-silver-700 dark:text-silver-300 transition-colors duration-500"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  transition={{ type: "spring", stiffness: 500, damping: 20 }}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-silver-100 dark:bg-royal-700/40 text-silver-700 dark:text-silver-300 transition-colors duration-300 cursor-default hover:bg-royal-100 dark:hover:bg-royal-600/40 hover:text-royal-700 dark:hover:text-royal-200"
                 >
                   <Icon size={14} />
                   {label}
-                </span>
+                </motion.span>
               ))}
             </div>
 
@@ -87,7 +93,7 @@ function BongoLab({ t }) {
           </div>
 
           {/* Phone Mockup with Video */}
-          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-12 bg-silver-100 dark:bg-royal-800 transition-colors duration-500">
+          <div className="flex items-center justify-center p-8 sm:p-10 lg:p-12 bg-silver-100 dark:bg-royal-800 transition-colors duration-500 group-hover:bg-silver-200/50">
             <div className="phone-mockup w-full max-w-[280px]">
               <div className="phone-screen bg-black aspect-[9/16] relative overflow-hidden">
                 <video
@@ -103,7 +109,7 @@ function BongoLab({ t }) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* AI Innovation Section */}
       <motion.div
@@ -114,9 +120,13 @@ function BongoLab({ t }) {
         className="mt-6 rounded-2xl bg-gradient-to-br from-royal-50 to-marmalade-50 dark:from-royal-800/80 dark:to-royal-800/40 border border-royal-200/60 dark:border-royal-700/50 p-8 sm:p-10 transition-colors duration-500"
       >
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-royal-500 to-marmalade-500 flex items-center justify-center">
+          <motion.div
+            whileHover={{ rotate: 12, scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 18 }}
+            className="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-royal-500 to-marmalade-500 flex items-center justify-center cursor-default"
+          >
             <BrainCircuit size={24} className="text-white" />
-          </div>
+          </motion.div>
           <h4 className="font-display font-bold text-xl sm:text-2xl text-royal-700 dark:text-white transition-colors duration-500">
             {project.ai.title}
           </h4>
@@ -131,18 +141,20 @@ function BongoLab({ t }) {
             const icons = [MessageSquare, Sparkles, GraduationCap, Globe];
             const Icon = icons[i];
             return (
-              <div
+              <motion.div
                 key={i}
-                className="flex items-start gap-3 p-4 rounded-xl bg-white/80 dark:bg-royal-800/60 border border-silver-200 dark:border-royal-700/30 transition-colors duration-500"
+                whileHover={{ y: -4 }}
+                transition={{ type: "spring", stiffness: 400, damping: 22 }}
+                className="group/card flex items-start gap-3 p-4 rounded-xl bg-white/80 dark:bg-royal-800/60 border border-silver-200 dark:border-royal-700/30 transition-all duration-300 hover:border-marmalade-300/60 dark:hover:border-marmalade-600/40 hover:shadow-lg hover:shadow-marmalade-500/10 cursor-default"
               >
                 <Icon
                   size={20}
-                  className="text-marmalade-500 mt-0.5 shrink-0"
+                  className="text-marmalade-500 mt-0.5 shrink-0 transition-transform duration-300 group-hover/card:scale-125 group-hover/card:rotate-6"
                 />
                 <span className="text-sm text-silver-700 dark:text-silver-300 transition-colors duration-500">
                   {feat}
                 </span>
-              </div>
+              </motion.div>
             );
           })}
         </div>
@@ -161,7 +173,11 @@ function Ntina({ t }) {
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.7 }}
     >
-      <div className="relative rounded-2xl bg-white dark:bg-royal-800/50 border border-silver-200 dark:border-royal-700/50 overflow-hidden transition-colors duration-500">
+      <motion.div
+        whileHover={{ y: -6 }}
+        transition={{ type: "spring", stiffness: 300, damping: 22 }}
+        className="relative rounded-2xl bg-white dark:bg-royal-800/50 border border-silver-200 dark:border-royal-700/50 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-marmalade-500/10 hover:border-marmalade-300/60 dark:hover:border-marmalade-500/40"
+      >
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Phone Mockup */}
           <div className="flex items-center justify-center p-8 sm:p-10 lg:p-12 bg-marmalade-50 dark:bg-royal-800 order-2 lg:order-1 transition-colors duration-500">
@@ -230,17 +246,22 @@ function Ntina({ t }) {
                 const icons = [Headphones, Users, Search, BookOpen];
                 const Icon = icons[i];
                 return (
-                  <div key={i} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-marmalade-100 dark:bg-marmalade-900/30 flex items-center justify-center shrink-0 transition-colors duration-500">
+                  <motion.div
+                    key={i}
+                    className="group/step flex items-start gap-4"
+                    whileHover={{ x: 4 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-marmalade-100 dark:bg-marmalade-900/30 flex items-center justify-center shrink-0 transition-all duration-300 group-hover/step:bg-marmalade-200 dark:group-hover/step:bg-marmalade-800/50 group-hover/step:scale-110">
                       <Icon
                         size={20}
-                        className="text-marmalade-600 dark:text-marmalade-400"
+                        className="text-marmalade-600 dark:text-marmalade-400 transition-transform duration-300 group-hover/step:rotate-12"
                       />
                     </div>
                     <p className="text-sm text-silver-700 dark:text-silver-300 pt-2 transition-colors duration-500">
                       {step}
                     </p>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
@@ -254,7 +275,7 @@ function Ntina({ t }) {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
