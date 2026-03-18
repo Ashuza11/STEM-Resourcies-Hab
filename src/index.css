@@ -109,6 +109,21 @@ html.dark {
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f7951e' fill-opacity='0.03'%3E%3Cpath d='M30 0L60 30L30 60L0 30z M30 10L50 30L30 50L10 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* ─── Partners marquee ─── */
+@keyframes partners-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.partners-track {
+  animation: partners-scroll 22s linear infinite;
+  will-change: transform;
+}
+
+.partners-track:hover {
+  animation-play-state: paused;
+}
+
 /* ─── Phone mockup ─── */
 .phone-mockup {
   background: linear-gradient(145deg, #111842, #0a0e29);
