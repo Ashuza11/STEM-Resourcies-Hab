@@ -48,7 +48,7 @@ export default function Partners() {
 
         {/* Marquee container — clips overflow, fades edges */}
         <div
-          className="overflow-hidden relative"
+          className="overflow-hidden relative py-4"
           style={{
             maskImage:
               "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
